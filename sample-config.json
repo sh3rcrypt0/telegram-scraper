@@ -1,0 +1,78 @@
+{
+	"phone": "<your phone number>",
+	"debug": false,
+	"api": {
+		"id": 123456789,
+		"hash": "<your api hash>"
+	},
+	"errors": {
+		"catch": true,
+		"webhook": "<your webhook url>"
+	},
+	"messages": {
+		"commands": false,
+		"embeds": false,
+		"allowedEmbeds": [
+			"twitter.com",
+			"fxtwitter.com",
+			"vxtwitter.com",
+			"fixupx.com",
+			"x.com",
+			"twitter.com"
+		],
+		"replacements": {
+			"://twitter.com": "://fxtwitter.com",
+			"://x.com": "://fxtwitter.com"
+		},
+		"blacklist": [
+			"Rose",
+			"RickBurpBot",
+			"MortyEvilBot"
+		],
+		"attachments": {
+			"save": true,
+			"ignore": [
+				"application/x-tgsticker"
+			]
+		}
+	},
+	"listeners": [
+		{
+			"name": "Migrated",
+			"type": "migrated",
+			"group": "-1002211879119",
+			"forum": true,
+			"includeForumChannelName": true,
+			"linked": true,
+			"embedded": true,
+			"channels": [
+				{
+					"name": "pumpfun -> raydium"
+				}
+			]
+		},
+		{
+			"name": "Cielo-MAIN",
+			"type": {"🟢": "buy", "🔴": "sell"},
+			"group": "5347402666",
+			"linked": false,
+			"embedded": true,
+			"allowDMs": true
+		},
+		{
+			"name": "Solana Freshies",
+			"type": "freshies",
+			"group": "-1002499264322",
+			"linked": true,
+			"embedded": true
+		},
+		{
+			"name": "Solana Dormant",
+			"type": "dormants",
+			"group": "-1002295944943",
+			"linked": true,
+			"embedded": true
+		}
+	]
+}
+
